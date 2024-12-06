@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Blog Dashboard</h1>
+    </header>
+
+    <main>
+      <section class="blog-form">
+        <h2>Add New Blog</h2>
+        <form id="blog-form">
+          <label>
+            Title:
+            <input type="text" id="blog-title" required>
+          </label>
+          <label>
+            Category:
+            <input type="text" id="blog-category" required>
+          </label>
+          <label>
+            Tags (comma-separated):
+            <input type="text" id="blog-tags">
+          </label>
+          <button type="submit">Add Blog</button>
+        </form>
+      </section>
+      
+      <section class="blog-list">
+        <h2>All Blogs</h2>
+        <ul id="blog-list"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

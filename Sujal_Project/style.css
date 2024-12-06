@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,#b9c3ca,#292e49);
+  }
+  
+  header {
+    background-color: #6200aa;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 30px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 30px;
+  }
+
+  .blog-form{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .blog-list{
+    border-radius: 30px;
+    padding: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  section {
+    flex: 1 1 calc(50% - 1rem);
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    margin: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #6200aa;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form button:hover {
+    background-color: #3700b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  li button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  li button.edit {
+    background: #2089d9;
+    right: 60px;
+    margin-right: 10px;
+  }
+  

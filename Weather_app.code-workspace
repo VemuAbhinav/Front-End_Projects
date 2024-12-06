@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "Weather_app"
+		},
+		{
+			"path": "Animation CSS"
+		},
+		{
+			"path": "To-do list"
+		},
+		{
+			"path": "Practice"
+		},
+		{
+			"path": "Drag_and_Drop"
+		},
+		{
+			"path": "Glowing_flowers"
+		},
+		{
+			"path": "HeartBeat"
+		},
+		{
+			"path": "PasswordGenerator"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PasswordGenerator"
+	}
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container {
+                width: 700px;
+                min-height: 700px;
+                border: 2px solid black;
+                margin: 10px auto 0px;
+                position: relative;
+            }
+            .vertical-line{
+                position: absolute;
+                width: 60px;
+                height: 150px;
+                background-color: #0582CA;
+                right: 90px;
+                /* border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px; */
+                /* border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px; */
+                
+            }
+            .vertical-line:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 30px solid #0582CA;
+                border-right: 30px solid #0582CA;
+                border-top: 35px solid white;
+                bottom: -25px;
+                rotate: 180deg;
+                left: 0;
+            }
+            
+            .dark-line1{
+                width: 100%;
+                height: 60px;
+                background-color: #051923;
+                margin-top: 40px;
+                color:white;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                font-size: 50px;
+                
+                font-family:'Lucida Sans Unicode';
+                font-weight: 500;
+                
+            }
+            .dark-line1 p{
+                margin: 5px 40px 5px 40px;
+                letter-spacing: 10px;
+            }
+            .dark-line2{
+                width: 100%;
+                height: 60px;
+                background-color: #051923;
+                color:white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                
+                font-family:'Lucida Sans Unicode';
+                font-weight: 500;
+                
+            }
+            .dark-line3{
+                width: 100%;
+                height: 60px;
+                background-color: #051923;
+                color:white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                
+                font-family:'Lucida Sans Unicode';
+                font-weight: 500;
+            }
+            .stripe{
+                height: 60px;
+                display: flex;
+                margin-top: 120px;
+            }
+            .left{
+                text-align: center;
+                font-weight: 600;
+                width: 55%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .right{
+                background-color: #0582CA;
+                width: 45%;
+                /* border-top-left-radius: 500px; */
+                position: relative;
+            }
+            .right::before{
+                content: '';
+                position: absolute;
+                left: 0; bottom: 0;
+                border-bottom: 60px solid #0582CA; 
+                border-left: 49px solid white; 
+                
+                width: 72px; height: 10px; 
+
+            }
+            .body-text {
+                padding: 30px;
+                padding-left: 70px;
+                padding-right: 70px;
+                text-align: center;
+            }
+
+            .body-button {
+                margin-top: 30px;
+                background-color: #0582CA;
+                width: 100px;
+                height: 50px;
+                border-radius: 30px;
+                color: white;
+                font-weight: 600;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .body-button:hover{
+                background-color: #0A6C9A;
+            }
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+
+            .contact-container>p {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="vertical-line"></div>
+            <div class="dark-line1"><p>TEC</p></div>
+            <div class="stripe">
+                <div class="left">TRITON EDUCATION CONSULTANT TEAM</div>
+                <div class="right"></div>
+            </div>
+            <div class="dark-line2"><p>Greetings</p></div>
+            <div class="body-text">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+                <button class='body-button'>CTA</button>
+              </div>
+            <div class="dark-line3">Triton Education Consultant</div>
+            <div class="contact-container">
+                
+                <p>&copy; 2024 Triton Education Consult</p>
+                <div class="address">
+                  
+                  <p>Chitoor, Andhra Pradesh - 517325</p>
+                </div>
+            </div>
+
+
+        </div>
+    
+        
+        
+    </body>
+</html>

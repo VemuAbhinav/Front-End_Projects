@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kMVqK5a2e+NpD1/5z4z4kZjfpA+6iHJ9N3ZWp2zScuAlq4VYzJh2r9uPHDmZg8b12prlF2O5pF5Qg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .email-background {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .email-container {
+      min-height: 100vh;
+      border: 2px solid black;
+      width: 50%;
+    }
+
+    .dark-line {
+      max-height: 50px;
+      background-color: #051923;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .dark-line2 {
+      background-color: #051923;
+      min-height: 50px;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+    }
+
+    .dark-line3 {
+      background-color: #051923;
+      min-height: 50px;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 30px;
+    }
+
+    .mail-logo {
+      width: 140px;
+      height: 90px;
+      border-radius: 1px;
+      position: relative;
+      left: 60px;
+      top: -24px;
+    }
+
+    .mailLogo {
+      border-radius: 1px;
+      width: 200px;
+      height: 60px;
+    }
+
+    .logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px;
+      margin-right: 50px;
+      margin-top: 5px;
+    }
+
+    .instalogo {
+      width: 20px;
+      margin: 5px;
+    }
+
+    .linklogo {
+      width: 20px;
+      margin: 5px;
+    }
+
+    .faclogo {
+      width: 10px;
+      margin: 5px;
+    }
+
+    .vertical-line {
+      width: 60px;
+      height: 120px;
+      background-color: #0582CA;
+      position: relative;
+      left: 80%;
+      top: -120px;
+    }
+
+    .vertical-line:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    .vertical-line:after {
+      border-left: 35px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 25px solid #0582CA;
+      bottom: -25px;
+      left: 0;
+    }
+
+    .part-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mail_img {
+      border-radius: 1px;
+    }
+
+    .title-date {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .name {
+      width: 50%;
+      text-align: center;
+      padding: 5px;
+      font-weight: 600;
+    }
+
+    .date {
+      background-color: #0582CA;
+      color: white;
+      width: 50%;
+      text-align: center;
+      padding: 5px;
+      font-weight: 600;
+    }
+
+    .body-text {
+      padding: 30px;
+      padding-left: 70px;
+      padding-right: 70px;
+      text-align: center;
+    }
+
+    .body-button {
+      margin-top: 30px;
+      background-color: #0582CA;
+      width: 100px;
+      height: 50px;
+      border-radius: 30px;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 50px;
+      font-weight: 500;
+    }
+
+    .contact-container>p {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-background">
+    <div class="email-container">
+      <div class="heading">
+        <div class="dark-line">
+          <img src="assets/newLogoWhite.png" class='mail-logo'>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="part-container">
+        <div class="title-date">
+          <p class='name'>TRITON EDUCATION CONSULT TEAM</p>
+          <p class='date'>June 1, 2003</p>
+        </div>
+        <img src="assets/email.png" class='mail_img'>
+      </div>
+      <div class="dark-line2">SUB TITLE</div>
+      <div class="body-text">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <button class='body-button'>CTA</button>
+      </div>
+      <div class="dark-line3">
+        <img src="assets/mailLogo.png" class='mailLogo'>
+        <div class="logos">
+          <i class="fab fa-instagram instalogo"></i>
+          <i class="fab fa-linkedin-in linklogo"></i>
+          <i class="fab fa-facebook-f faclogo"></i>
+        </div>
+      </div>
+      <div class="contact-container">
+        <p>Email by</p>
+        <p>Update your mail preferences here</p>
+        <p>&copy; 2024 Triton Education Consult</p>
+        <div class="address">
+          <p>123, Street name</p>
+          <p>City, State, Country - Pin Code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
