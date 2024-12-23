@@ -33,7 +33,10 @@ body{
     margin-right: 1250px;
 }
 
-
+.players{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .player{
     background-color: #840931;
